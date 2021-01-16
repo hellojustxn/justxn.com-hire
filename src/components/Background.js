@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Cloud.css';
+import './Background.css';
 
 function CloudBackground() {
   return (

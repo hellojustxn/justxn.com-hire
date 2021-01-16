@@ -20,27 +20,29 @@ const useStyles = makeStyles((theme) => ({
   },
 
   profilePicture: {
-    borderBottomLeftRadius: 20,
-    borderTopLeftRadius: 20,
     height:'100%',
+    borderTopLeftRadius: 20,
+    borderBottomLeftRadius: 20,
     [theme.breakpoints.down('xs')]: {
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
-      borderBottomLeftRadius: 0,
-      borderBottomRightRadius: 0,
-      width: "100%", /* width of container */
-      height: "auto",
-      // height: "150px", /* height of container */
-      overflow: "hidden",
+      // borderTopLeftRadius: 20,
+      // borderTopRightRadius: 20,
+      // width: "100%", /* width of container */
+      // height: "auto",
+      // overflow: "hidden",
+      // marginBottom: -200,
+      // visibility: 'hidden',
+      display: 'none',
     },
   },
   cardDescription: {
+    background: 'white',
     display: 'flex',
     alignItems: 'center',
     width: '100%',
     justifyContent: 'space-between',
     flexDirection: 'column',
     fontFamily: 'Raleway, sans-serif',
+    borderRadius: 20,
   },
   largeIcon: {
     width: 60,
@@ -72,10 +74,10 @@ function Profile() {
         <div className={classes.cardDescription}>
           <div>
             <Typography className={classes.quote}>
-              Hi - I'm based in San Francisco, CA and I'm currently studying persuing a B.S. in Computer Science at the University of California, Santa Cruz.
+              Hi - I'm based in San Francisco, CA and I'm currently pursuing a B.S. in Computer Science at the University of California, Santa Cruz.
             </Typography>
             <Typography className={classes.quote}>              
-               I do full-stack web development with the NERP stack.
+               I do full-stack web development with the NERP stack along with scripting in Bash or Python.
             </Typography>
             <Typography className={classes.quote}>
               If I'm not coding, I run my online e-commerce business, raise two animals, and go traveling (Pre-Covid!).

@@ -1,5 +1,5 @@
 import './App.css';
-import CloudBackground from './components/CloudBackground';
+import Background from './components/Background';
 import { makeStyles,  createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { Toolbar } from '@material-ui/core';
 import Profile from './components/Profile';
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <CloudBackground />
+        <Background />
         <div className="Container">
           <Profile  />
         </div> 

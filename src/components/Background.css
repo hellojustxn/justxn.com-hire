@@ -52,7 +52,7 @@ body{
     bottom: -150px;
 
     background-repeat: no-repeat;
-    background-image: url('./logo.svg');
+    background-image: url('../logo.svg');
     
 }
 
