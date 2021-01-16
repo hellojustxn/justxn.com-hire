@@ -19,14 +19,14 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <div className="App">
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <div className="App">
         <Background />
         <div className="Container">
           <Profile  />
         </div> 
-      </ThemeProvider>
-    </div>
+      </div>
+    </ThemeProvider >
   );
 }
 
