@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import CloudBackground from './components/CloudBackground';
+import { makeStyles,  createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import Profile from './components/Profile';
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      'Raleway',
+      'Nunito',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif'
+    ].join(','),
+  }
+});
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <CloudBackground />
+        <div className="Container">
+          <Profile  />
+        </div> 
+      </ThemeProvider>
     </div>
   );
 }
