@@ -20,7 +20,11 @@ const useStyles = makeStyles((theme) => ({
     height: 300,
     borderRadius: 20,
     display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
   },
+
   profilePicture: {
     borderBottomLeftRadius: 20,
     borderTopLeftRadius: 20,
@@ -67,7 +71,7 @@ function Profile() {
               Hi - I'm based in San Francisco, CA and I do full-stack web development with the NERP stack.
             </Typography>
             <Typography className={classes.quote}>
-              On my free time, I raise two animals and go traveling.
+              On my free time, I raise two animals and go traveling (Pre-Covid).
             </Typography>
             <Typography className={classes.author}  variant='subtitle1'>
               Justin
