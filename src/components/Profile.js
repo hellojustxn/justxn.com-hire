@@ -5,29 +5,34 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    zindex: 100000, position: 'absolute',
-    display: 'flex',
-    flexWrap: 'wrap',
-    '& > *': {
-      margin: theme.spacing(1),
-      width: theme.spacing(16),
-      height: theme.spacing(16),
-    },
-  },
   paper: {
     width: 500,
-    height: 300,
+    height: 320,
     borderRadius: 20,
     display: 'flex',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
+    [theme.breakpoints.down('xs')]: {
+      maxHeight: '100%',
+      height: 'auto',
+      maxWidth: '600px',
+
+      width: '80%',
+      flexDirection: 'column',
     },
   },
 
   profilePicture: {
     borderBottomLeftRadius: 20,
     borderTopLeftRadius: 20,
+    height:'100%',
+    [theme.breakpoints.down('xs')]: {
+      borderTopLeftRadius: 20,
+      borderTopRightRadius: 20,
+      borderBottomLeftRadius: 0,
+      borderBottomRightRadius: 0,
+      width: "100%", /* width of container */
+      // height: "150px", /* height of container */
+      overflow: "hidden",
+    },
   },
   cardDescription: {
     display: 'flex',
@@ -37,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     fontFamily: 'Raleway, sans-serif',
   },
-    largeIcon: {
+  largeIcon: {
     width: 60,
     height: 60,
   },
@@ -62,9 +67,8 @@ function Profile() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
       <Paper className={classes.paper} elevation={3}>
-        <img src='./justin.JPG' className={classes.profilePicture} height='100%'/>
+        <img src='./justin.JPG' className={classes.profilePicture}/>
         <div className={classes.cardDescription}>
           <div>
             <Typography className={classes.quote}>
@@ -93,7 +97,6 @@ function Profile() {
           </div>
         </div>
       </Paper>
-    </div>
   );
 }
 

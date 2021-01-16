@@ -1,6 +1,7 @@
 import './App.css';
 import CloudBackground from './components/CloudBackground';
 import { makeStyles,  createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { Toolbar } from '@material-ui/core';
 import Profile from './components/Profile';
 
 const theme = createMuiTheme({
