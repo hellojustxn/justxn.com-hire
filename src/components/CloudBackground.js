@@ -3,18 +3,20 @@ import '../Cloud.css';
 
 function CloudBackground() {
   return (
-    <div class="area" >
-            <ul class="circles">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-            </ul>
+    // <div className="cloudContainer">
+      <div class="area" >
+              <ul class="circles">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+              </ul>
+      {/* </div> */}
     </div>
   );
 }

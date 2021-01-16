@@ -6,15 +6,14 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    width: 500,
-    height: 320,
+    width: 800,
+    height: 400,
     borderRadius: 20,
     display: 'flex',
     [theme.breakpoints.down('xs')]: {
       maxHeight: '100%',
       height: 'auto',
       maxWidth: '600px',
-
       width: '80%',
       flexDirection: 'column',
     },
@@ -30,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
       borderBottomLeftRadius: 0,
       borderBottomRightRadius: 0,
       width: "100%", /* width of container */
+      height: "auto",
       // height: "150px", /* height of container */
       overflow: "hidden",
     },
@@ -72,10 +72,13 @@ function Profile() {
         <div className={classes.cardDescription}>
           <div>
             <Typography className={classes.quote}>
-              Hi - I'm based in San Francisco, CA and I do full-stack web development with the NERP stack.
+              Hi - I'm based in San Francisco, CA and I'm currently studying persuing a B.S. in Computer Science at the University of California, Santa Cruz.
+            </Typography>
+            <Typography className={classes.quote}>              
+               I do full-stack web development with the NERP stack.
             </Typography>
             <Typography className={classes.quote}>
-              On my free time, I raise two animals and go traveling (Pre-Covid).
+              If I'm not coding, I run my online e-commerce business, raise two animals, and go traveling (Pre-Covid!).
             </Typography>
             <Typography className={classes.author}  variant='subtitle1'>
               Justin
