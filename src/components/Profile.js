@@ -77,7 +77,7 @@ function Profile() {
               Hi - I'm based in San Francisco, CA and I'm currently pursuing a B.S. in Computer Science at the University of California, Santa Cruz.
             </Typography>
             <Typography className={classes.quote}>              
-               I do full-stack web development with the NERP stack along with scripting in Bash or Python.
+               I do full-stack web development with the NERP stack along with scripting in either Bash or Python.
             </Typography>
             <Typography className={classes.quote}>
               When I'm not coding, I spend my time running my online e-commerce business, listening to podcasts, and working out (Pre-Covid!).
