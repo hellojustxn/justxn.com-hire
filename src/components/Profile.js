@@ -80,7 +80,7 @@ function Profile() {
                I do full-stack web development with the NERP stack along with scripting in either Bash or Python.
             </Typography>
             <Typography className={classes.quote}>
-              When I'm not coding, I spend my time running my online e-commerce business, listening to podcasts, and working out (Pre-Covid!).
+              When I'm not coding, I spend my time running my online business, making YouTube videos, listening to podcasts, and working out (Pre-Covid!).
             </Typography>
             <Typography className={classes.author}  variant='subtitle1'>
               Justin
