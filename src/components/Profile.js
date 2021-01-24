@@ -70,7 +70,7 @@ function Profile() {
 
   return (
       <Paper className={classes.paper} elevation={3}>
-        <img src='./justin.JPG' className={classes.profilePicture}/>
+        <img src='https://justxn-us-west-1.s3-us-west-1.amazonaws.com/profile.jpeg' className={classes.profilePicture}/>
         <div className={classes.cardDescription}>
           <div>
             <Typography className={classes.quote}>
