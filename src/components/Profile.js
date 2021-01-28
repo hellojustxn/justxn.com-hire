@@ -3,6 +3,7 @@ import { makeStyles} from '@material-ui/core/styles';
 import {Paper, IconButton, Typography } from '@material-ui/core';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -24,13 +25,6 @@ const useStyles = makeStyles((theme) => ({
     borderTopLeftRadius: 20,
     borderBottomLeftRadius: 20,
     [theme.breakpoints.down('xs')]: {
-      // borderTopLeftRadius: 20,
-      // borderTopRightRadius: 20,
-      // width: "100%", /* width of container */
-      // height: "auto",
-      // overflow: "hidden",
-      // marginBottom: -200,
-      // visibility: 'hidden',
       display: 'none',
     },
   },
@@ -90,15 +84,23 @@ function Profile() {
             </Typography>
           </div>
           <div>
-            <IconButton aria-label='LinkedIn' style={{ color: '#0E76A8' }} href='https://www.linkedin.com/in/justxn/'>
+          <IconButton aria-label='LinkedIn' style={{ color: '#0E76A8' }} href='https://bit.ly/justxn_linkedin'>
               <LinkedInIcon  fontSize='large' style={{ size: '40px' }} className={classes.largeIcon}/>
             </IconButton>
-            {/* <IconButton aria-label='YouTube' style={{ color: 'red' }} href='' >
+          <IconButton aria-label='YouTube' style={{ color: '#FF0000' }} href='http://bit.ly/justxn_youtube' >
               <YouTubeIcon  fontSize='large' style={{ size: '40px' }} className={classes.largeIcon}/>
-            </IconButton> */}
-            <IconButton aria-label='YouTube' style={{ color: 'black' }} href='https://www.youracclaim.com/users/justxn/badges' >
+            </IconButton>
+          <IconButton aria-label='Github' style={{ color: '#282828' }} href='https://bit.ly/justxn_github' >
+              <GitHubIcon  fontSize='large' style={{ size: '40px' }} className={classes.largeIcon}/>
+            </IconButton>
+          <IconButton aria-label='YouTube' style={{ color: 'black' }} href='https://bit.ly/justxn_acclaim' >
               <img src='./aws-sa.png' className={classes.largeIcon}/>
             </IconButton>
+          </div>
+          <div>
+            <Typography className={classes.role} variant='subtitle1'>
+              Hello @ Justxn.com
+            </Typography>
           </div>
         </div>
       </Paper>
